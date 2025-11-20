@@ -1,1 +1,25 @@
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.typeos"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
 
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.android.support:design:31.0.0'
+    // Chaquopy для Python
+    implementation 'com.chaquo:chaquopy:12.0.0'
+    // J2V8 для V8
+    implementation 'de.obqo.android:j2v8:5.0.0'
+}

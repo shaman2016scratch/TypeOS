@@ -1,0 +1,8 @@
+chaquopy {
+    defaultConfig {
+        pip {
+            install "Pillow"
+            install "numpy"
+        }
+    }
+}
